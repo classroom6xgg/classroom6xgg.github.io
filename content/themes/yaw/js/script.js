@@ -66,7 +66,7 @@ $(function() {
 	async function fetchMoreGames(amount, sort_by) {
 	    try {
 	        const response = await $.ajax({
-	            url: "/includes/fetch.php",
+	            url: "https://google.classroom6x.gg/includes/fetch.php",
 	            type: 'POST',
 	            dataType: 'json',
 	            data: {amount: amount, offset: last_offset, sort_by: sort_by},

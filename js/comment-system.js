@@ -110,7 +110,7 @@ class CommentSystem {
 			commentChildren.style.display = 'block';
 			if (hideRepliesBtn) hideRepliesBtn.style.display = 'block';
 		} else {
-			fetch('includes/comment.html', {
+			fetch('/includes/comment.php', {
 				method: 'POST',
 				headers: {
 					'Content-Type': 'application/x-www-form-urlencoded',
@@ -181,7 +181,7 @@ class CommentSystem {
 			'content': content
 		};
 		const formData = new URLSearchParams(requestData);
-		fetch('includes/comment.html', {
+		fetch('/includes/comment.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'
@@ -224,7 +224,7 @@ class CommentSystem {
 			'amount': encodeURIComponent(this.config.commentsPerLoad)
 		};
 		const formData = new URLSearchParams(requestData);
-		fetch('includes/comment.html', {
+		fetch('/includes/comment.php', {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/x-www-form-urlencoded'

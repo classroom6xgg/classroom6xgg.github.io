@@ -970,7 +970,7 @@ var ua_parser = new UAParser().getResult();
 
 function send_stats_data(data){
 	let xhr = new XMLHttpRequest();
-	xhr.open('POST.html', 'includes/statistics.html', true);
+	xhr.open('POST', '/includes/statistics.php', true);
 	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 	xhr.onload = function() {
 		if (xhr.status === 200) {
